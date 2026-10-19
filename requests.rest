@@ -1,0 +1,52 @@
+### Базовий URL для Swagger та REST API
+@baseUrl = http://localhost:5000
+
+### 1. Отримати специфікацію OpenAPI v1 (JSON)
+GET {{baseUrl}}/swagger/v1/swagger.json
+Accept: application/json
+
+### 2. Отримати список усіх відправлень (GET /postings)
+GET {{baseUrl}}/postings
+Accept: application/json
+
+### 3. Отримати відправлення за ID (GET /postings/1)
+GET {{baseUrl}}/postings/1
+Accept: application/json
+
+### 4. Створити нове відправлення (POST /postings)
+POST {{baseUrl}}/postings
+Content-Type: application/json
+
+{
+  "from": "Київ",
+  "to": "Полтава",
+  "content": "Комп'ютерні комплектуючі",
+  "deliveryType": 1,
+  "weight": 3.2,
+  "width": 35,
+  "height": 20,
+  "depth": 25,
+  "value": 1500,
+  "price": 140
+}
+
+### 5. Оновити відправлення (PUT /postings/1)
+PUT {{baseUrl}}/postings/1
+Content-Type: application/json
+
+{
+  "from": "Київ",
+  "to": "Львів",
+  "content": "Термінові документи та договори",
+  "deliveryType": 1,
+  "weight": 1.0,
+  "width": 25,
+  "height": 10,
+  "depth": 20,
+  "value": 400,
+  "price": 95
+}
+
+### 6. Видалити відправлення (DELETE /postings/1)
+DELETE {{baseUrl}}/postings/1
+Accept: application/json
