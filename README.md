@@ -1,9 +1,6 @@
 # ПР-51 Створення Swagger документації до REST API
 
 **Тема:** Створення Swagger документації до REST API  
-**Дисципліна:** Програмування / Розробка сервісів  
-**Викладач:** Олександр Дмитрович Мопан  
-**Студентка:** Овдійчук Марія  
 **Програмний проєкт:** `PostService` (ASP.NET Core Web API)  
 **Репозиторій проєкту:** [https://github.com/m-messa-it/--51-swagger-rest-api.git](https://github.com/m-messa-it/--51-swagger-rest-api.git)
 
